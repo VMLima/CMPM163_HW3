@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cube:
-        m_Texture: {fileID: 8900000, guid: 90196f2c2d8d2f2448717676e1a09894, type: 3}
+        m_Texture: {fileID: 8900000, guid: 5c821097dc8af6f4891dee145946d696, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DerivHeightMap:
@@ -75,27 +75,27 @@ Material:
     - _FlowOffset: 0
     - _FlowStrength: 0.05
     - _GlossMapScale: 1
-    - _Glossiness: 0.719
+    - _Glossiness: 0.7
     - _GlossyReflections: 1
-    - _HeightScale: 1.45
-    - _HeightScaleModulated: 0.93
+    - _HeightScale: 1
+    - _HeightScaleModulated: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RefractionAmount: 0.679
-    - _RefractionStrength: 0.198
+    - _RefractionAmount: 1
+    - _RefractionStrength: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _Speed: 0.15
     - _SrcBlend: 1
-    - _Tiling: 5.19
-    - _UJump: 0.24
+    - _Tiling: 5
+    - _UJump: 0.25
     - _UVSec: 0
-    - _VJump: 0.2
-    - _WaterFogDensity: 0
+    - _VJump: 0.25
+    - _WaterFogDensity: 0.11
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0.16078432}
+    - _Color: {r: 0, g: 0.7988825, b: 1, a: 0.16078432}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _WaterFogColor: {r: 0, g: 0.36751443, b: 0.754717, a: 0.56078434}
+    - _WaterFogColor: {r: 0.18262726, g: 0.41993877, b: 0.6792453, a: 0.56078434}

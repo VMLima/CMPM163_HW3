@@ -22,9 +22,11 @@
 	}
 
     Subshader{
-        //Pass {
         //    Tags { "RenderType" = "Transparent" "Queue" = "Transparent" }
-        //    Blend SrcAlpha OneMinusSrcAlpha
+        //Pass {
+        //    
+        //    
+            Blend SrcAlpha OneMinusSrcAlpha
         //    CGPROGRAM
 
         //    #pragma vertex vert
@@ -106,7 +108,7 @@
         GrabPass { "_WaterBackground" }
 
         CGPROGRAM
-        #pragma surface surf Standard alpha finalcolor:ResetAlpha
+        #pragma surface surf Standard alpha //finalcolor:ResetAlpha
         #pragma target 3.0
 
         #include "Flow.cginc"
@@ -168,12 +170,12 @@
             o.Smoothness = _Glossiness;
             o.Alpha = c.a;
 
-            o.Emission = ColorBelowWater(IN.screenPos, o.Normal) * (1 - c.a);
+            //o.Emission = ColorBelowWater(IN.screenPos, o.Normal) *(1 - c.a);
         }
 
-        void ResetAlpha(Input IN, SurfaceOutputStandard o, inout fixed4 color) {
-            color.a = 1;
-        }
+        //void ResetAlpha(Input IN, SurfaceOutputStandard o, inout fixed4 color) {
+        //    color.a = 1;
+        //}
 
         ENDCG
     }
